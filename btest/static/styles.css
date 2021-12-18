@@ -1,0 +1,40 @@
+body {
+	color:#000080;
+background-color:#e6ffff;
+}
+h1{
+	background-color:#ffff4d;
+	text-align: center;
+}
+h2{
+	background-color:#ff0000;
+	color:#ffffff;
+	text-decoration: underline;
+}
+#ambul {
+  width: 100%;
+  text-align: left;
+  border-style: double;
+}
+#palata {
+  width: 18%;
+  position:absolute;
+  top:0px;
+  left:80%;
+   border-style: double;
+}
+
+#map {
+  width: 40%;
+  position:absolute;
+  top:0px;
+  left:40%;
+  border-style: double;  
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  background-color: #00ff00;
+  
+}
