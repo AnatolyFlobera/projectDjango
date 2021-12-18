@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+{% load bootstrap5 %}
+{% bootstrap_javascript %}
+{% bootstrap_css %}
+{% load static %}
+<title>Загрузка больницы</title>
+ <link rel="stylesheet" href="{% static "styles.css" %}" />
+</head>
+
+<body>
+
+<div id=ambul>
+<h1>Амбулаторные периоды</h1>
+<p align='center'>********************************************************</p>
+{% for bbb in bbx %}
+
+<p><i>Пациент:</i> {{ bbb.pacient }}</p>
+<p> <i>Дата поступления:</i> {{ bbb.datapostuplenija }}</p>
+<p> <i>Диагноз:</i> {{ bbb.diagnoz }}</p>
+<p> <i>Дата выписки:</i> {{ bbb.datavypiski }}</p>
+<p> <i>Номер палаты:</i> {{ bbb.palata }}</p>  
+<p align='center'>----------------------------------------------------</p>
+{% endfor %}
+</div>
+<div id='footer'> Загрузка больницы &copy World Health 2021</div>
+
+
+</body>
+</html>
+
+
+<!-- Код для вывода карты пациента и больничных палат
+<div id=map>
+<h1>Карта пациентов</h1>
+{% for bbb in bbx %}
+
+<p><i>ФИО:</i> {{ bbb.familija }}  {{ bbb.name }}  {{ bbb.otchestvo }}</p>
+<p> <i>Номер:</i> {{ bbb.nomer }}</p>
+<p> <i>Страховой полис:</i> {{ bbb.strahovojpolis }}</p>
+<p> <i>Дата поступления:</i> {{ bbb.datecreation }}</p>
+<p> <i>Адрес:</i> {{ bbb.patientaddress }}</p>  
+<p> <i>Серия и номер паспорта:</i> {{ bbb.passportseries }} {{ bbb.passportid }}</p> 
+<p align='center'>----------------------------------------------------</p>
+{% endfor %}
+</div>
+
+
+<div id=palata>
+<h1>Палаты</h1>
+{% for bbb in bbx %}
+<p><i>Этаж:</i> {{ bbb.jetazh }}</p>
+<p> <i>Номер:</i> {{ bbb.nomer }}</p>
+<p> <i>Вместимость:</i> {{ bbb.vmeshhaemost }}</p>
+<p align='center'>----------------------</p>
+{% endfor %}
+</div>
+-->
